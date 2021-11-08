@@ -40,16 +40,16 @@ p {
 }
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   h2 {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 img {
@@ -88,6 +88,15 @@ header {
   width: 12rem;
   height: 2.1rem;
 }
+@media screen and (min-width: 768px) {
+  header {
+    padding: 4rem;
+  }
+  .logo {
+    width: 15rem;
+    height: 2.5rem;
+  }
+}
 /* Hero Section */
 .hero {
   align-items: center;
@@ -96,6 +105,21 @@ header {
   margin-top: 4rem;
   padding: 1rem;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    padding: 4rem;
+    margin-bottom: 20rem;
+  }
+  .hero__heading {
+    width: 70%;
+    text-align: left;
+    padding-right: 5rem;
+  }
+  .hero__image {
+    width: 100%;
+  }
 }
 .hero__text {
   color: black;
@@ -107,24 +131,52 @@ header {
 /* Sections */
 section {
   text-align: center;
-  margin-bottom: 5rem;
   padding: 1rem;
-  margin: 1rem;
 }
 .section--one {
   padding: 2.3rem;
+  margin-bottom: 10rem;
   border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 .section--two {
   padding: 2.3rem;
+  margin-bottom: 10rem;
   border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 .section--three {
   padding: 2.3rem;
+  margin-bottom: 10rem;
   border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+@media screen and (min-width: 768px) {
+  section {
+    text-align: left;
+    margin-bottom: 15rem;
+  }
+  .section--one {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10rem;
+  }
+  .section--two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10rem;
+  }
+  .section--three {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10rem;
+  }
+  .section__article {
+    width: 80%;
+  }
 }
 /* Callout Card */
 .callout-card {
@@ -143,6 +195,16 @@ section {
 }
 .callout-card > .btn {
   font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .callout-card {
+    width: 60%;
+    top: -12%;
+    right: 20%;
+  }
+  .callout-card > .btn {
+    font-size: 1.5rem;
+  }
 }
 /* Buttons */
 .btn {
@@ -173,6 +235,18 @@ section {
 }
 .btn--small:hover {
   color: var(--grayish-blue);
+}
+@media screen and (min-width: 768px) {
+  .btn--primary {
+    width: 40%;
+    padding: 2rem 3.5rem;
+  }
+  .btn--small {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    width: 10%;
+  }
 }
 /* Footer */
 footer {
