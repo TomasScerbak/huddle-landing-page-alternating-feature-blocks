@@ -3,6 +3,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  font-family: var(--ff-open-sans);
   line-height: 1.5;
   font-size: 1.8rem;
 }
@@ -25,10 +26,49 @@ h2 {
   font-family: var(--ff-poppins);
   font-weight: 600;
 }
+/* Background Images */
+.bacground {
+  position: absolute;
+  z-index: -1;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.logo {
+  width: 12rem;
+  height: 2.2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/* Buttons */
+.btn {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--color-pink);
+  padding: 4rem 1.5rem;
+}
+.btn--small {
+  font-size: 1.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #fff;
+  padding: 1rem 3.5rem;
+}
+.btn--small:hover {
+  color: var(--grayish-blue);
 }

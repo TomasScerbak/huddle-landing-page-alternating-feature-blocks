@@ -26,7 +26,15 @@
     </title>
   </head>
   <body>
-    <header>Try It Free</header>
+    <picture class="bacground">
+      <source media="(min-width: 900px)" srcset="Images/bg-hero-desktop.svg" />
+      <source media="(min-width: 480px)" srcset="Images/bg-hero-mobile.svg" />
+      <img src="Images/bg-hero-mobile.svg" alt="background image" />
+    </picture>
+    <header>
+      <img class="logo" src="Images/logo.svg" alt="logo of the company" />
+      <button class="btn btn--small">Try It Free</button>
+    </header>
     <main>
       <section class="hero">
         Build The Community Your Fans Will Love Huddle re-imagines the way we
