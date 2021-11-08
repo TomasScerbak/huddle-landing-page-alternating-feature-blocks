@@ -32,6 +32,9 @@ h1 {
 h2 {
   font-size: 2.8rem;
 }
+h3 {
+  font-size: 1.7rem;
+}
 p {
   color: var(--grayish-blue);
 }
@@ -61,19 +64,57 @@ header {
   align-items: center;
   text-align: center;
   padding: 1rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .hero__text {
   color: black;
 }
+.hero__image {
+  margin-top: 4rem;
+}
 /* Sections */
 section {
   text-align: center;
-  padding: 1rem;
   margin-bottom: 7rem;
+  padding: 1rem;
+}
+.section--one {
+  margin: 1rem;
+  padding: 2.3rem;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section--two {
+  margin: 1rem;
+  padding: 2.3rem;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section--three {
+  margin: 1rem;
+  padding: 2.3rem;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* Callout Card */
+.callout-card {
+  color: black;
+  background-color: #fff;
+  position: absolute;
+  top: -23%;
+  left: 2.5%;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+}
+.callout-card > .btn {
+  font-size: 1.1rem;
 }
 /* Buttons */
 .btn {
+  white-space: nowrap;
   font-weight: bold;
   border: none;
   outline: none;
@@ -85,8 +126,7 @@ section {
   font-size: 1.5rem;
   background-color: var(--color-pink);
   padding: 1.5rem 3.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 7rem;
+  margin-bottom: 1.5rem;
   width: 80%;
 }
 .btn--primary:hover {
@@ -102,7 +142,17 @@ section {
 .btn--small:hover {
   color: var(--grayish-blue);
 }
-
+/* Footer */
+footer {
+  position: relative;
+  background-color: var(--very-dark-cyan);
+  color: var(--very-pale-cyan);
+  margin-top: 10rem;
+}
+.footer-logo {
+  fill: #fff;
+  margin-top: 10rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
