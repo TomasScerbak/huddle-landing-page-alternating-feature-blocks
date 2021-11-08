@@ -199,7 +199,7 @@ section {
 @media screen and (min-width: 768px) {
   .callout-card {
     width: 60%;
-    top: -12%;
+    top: -20%;
     right: 20%;
   }
   .callout-card > .btn {
@@ -282,6 +282,32 @@ footer {
   height: 1.5rem;
   margin-right: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .company-info {
+    width: 30%;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .copy {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+}
 /* Media Icons */
 .media__icons {
   display: flex;
@@ -305,6 +331,8 @@ footer {
   font-size: 1.1rem;
 }
 .attribution {
+  position: absolute;
+  bottom: 0%;
   font-size: 1.3rem;
   text-align: center;
 }
