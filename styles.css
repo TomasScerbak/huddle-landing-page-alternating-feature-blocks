@@ -41,6 +41,13 @@ p {
 img {
   width: 100%;
 }
+/* Lists */
+ul,
+li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
 /* Background Images */
 .bacground {
   position: absolute;
@@ -48,9 +55,9 @@ img {
 }
 /* Header */
 header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
 }
 .logo {
@@ -59,15 +66,16 @@ header {
 }
 /* Hero Section */
 .hero {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
   margin-top: 4rem;
+  padding: 1rem;
+  text-align: center;
 }
 .hero__text {
   color: black;
+  margin-bottom: 3rem;
 }
 .hero__image {
   margin-top: 4rem;
@@ -75,58 +83,55 @@ header {
 /* Sections */
 section {
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   padding: 1rem;
 }
 .section--one {
-  margin: 1rem;
   padding: 2.3rem;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .section--two {
-  margin: 1rem;
   padding: 2.3rem;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .section--three {
-  margin: 1rem;
   padding: 2.3rem;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 /* Callout Card */
 .callout-card {
-  color: black;
   background-color: #fff;
-  position: absolute;
-  top: -23%;
-  left: 2.5%;
-  margin: 2rem;
-  padding: 1rem;
   border-radius: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: black;
+  margin: 2rem;
+  padding: 1rem;
+  position: absolute;
   text-align: center;
+  top: -23%;
+  width: 90%;
 }
 .callout-card > .btn {
   font-size: 1.1rem;
 }
 /* Buttons */
 .btn {
-  white-space: nowrap;
-  font-weight: bold;
-  border: none;
-  outline: none;
   border-radius: 30px;
+  border: none;
   cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  white-space: nowrap;
 }
 .btn--primary {
+  background-color: var(--color-pink);
   color: #fff;
   font-size: 1.5rem;
-  background-color: var(--color-pink);
-  padding: 1.5rem 3.5rem;
   margin-bottom: 1.5rem;
+  padding: 1.5rem 3.5rem;
   width: 80%;
 }
 .btn--primary:hover {
@@ -147,14 +152,17 @@ footer {
   position: relative;
   background-color: var(--very-dark-cyan);
   color: var(--very-pale-cyan);
-  margin-top: 10rem;
+  margin-top: 30rem;
 }
 .footer-logo {
-  fill: #fff;
-  margin-top: 10rem;
+  margin-top: 14rem;
+  width: 18rem;
+}
+.contact__image {
+  width: 1.5rem;
 }
 .attribution {
-  font-size: 11px;
+  font-size: 1.3rem;
   text-align: center;
 }
 .attribution a {
