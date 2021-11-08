@@ -285,8 +285,9 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 3rem;
   }
   .company-info {
     width: 30%;
@@ -306,6 +307,9 @@ footer {
     position: absolute;
     bottom: 10%;
     right: 5%;
+  }
+  .list-a {
+    margin-right: 10rem;
   }
 }
 /* Media Icons */
@@ -338,4 +342,10 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 768px) {
+  .attribution {
+    bottom: 5%;
+    left: 38%;
+  }
 }
